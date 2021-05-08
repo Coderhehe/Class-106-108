@@ -7,7 +7,8 @@ height:350,
 image_format:'png',
 png_quality:90
 });
-
+camera=document.getElementById("camera");
+Webcam.attach("#camera");
 function take(){
 Webcam.snap(function(data_uri){
 document.getElementById("result").innerHTML="<img id='capture' src="+data_uri+">";
@@ -19,7 +20,6 @@ classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/M
 function modelLoaded() {
     console.log("Model Loaded!");
 }
-
 function speak() {
     synth=window.speechSynthesis;
     speak1="The First Prediction Is"+prediction1;
