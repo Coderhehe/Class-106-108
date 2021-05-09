@@ -43,6 +43,7 @@ document.getElementById("result_emotion_name").innerHTML=result[0].label;
 document.getElementById("result_emotion_name2").innerHTML=result[1].label;
 prediction1=result[0].label;
 prediction2=result[1].label;
+speak();
 if (result[0].label=="happy") {
     document.getElementById("result_emotio_name").innerHTML="&#128522;";
 }
@@ -50,16 +51,16 @@ if (result[0].label=="angry") {
     document.getElementById("result_emotio_name").innerHTML="&#128545;";
 }
 if (result[0].label=="sad") {
-    document.getElementById("result_emotio_name").innerHTML="&#128546;"
+    document.getElementById("result_emotio_name").innerHTML="&#128546;";
 }
 if (result[1].label=="happy") {
-    document.getElementById("result_emotio_name2").innerHTML="&#128522;"
+    document.getElementById("result_emotio_name2").innerHTML="&#128522;";
 }
 if (result[1].label=="angry") {
-    document.getElementById("result_emotio_name2").innerHTML="&#128545;"
+    document.getElementById("result_emotio_name2").innerHTML="&#128545;";
 }
 if (result[1].label=="sad") {
-    document.getElementById("result_emotio_name2").innerHTML="&#128546;"
+    document.getElementById("result_emotio_name2").innerHTML="&#128546;";
 }
     } 
 }
